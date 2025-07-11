@@ -1,0 +1,76 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+    }
+
+    .stopwatch {
+      background: #ffffff10;
+      border: 2px solid #ffffff33;
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .time {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+    .time {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons button {
+      background-color: #fff;
+      color: #1e3c72;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #1e3c72;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .time {
+        font-size: 2rem;
+      }
+
+      .buttons button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  
